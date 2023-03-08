@@ -6,6 +6,8 @@ A toy API for demonstrating testing.
 
 Install all required libraries with `pip install -r requirements.txt`.
 
+This project assumes you have an accessible local Postgres database called `pokemon` and that your name is `dan`; I'll generalise this later, but for now, edit your connection details in `pokefunctions.py`.
+
 ## Development
 
 Run the program with `python api.py`.

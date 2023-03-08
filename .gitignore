@@ -1,0 +1,6 @@
+.pytest_cache
+venv
+.DS_Store
+.env
+.coverage
+__pycache__

@@ -20,9 +20,16 @@ def pokemon() -> list | dict:
                             "Message": "Unable to retrieve pokemon"}), 500
 
     else:
-        data = request.json
-        new_pokemon = pokefunctions.add_one(data)
-        return jsonify(new_pokemon), 201
+        try:
+            data = request.json
+            if 'name' not in data:
+                raise Exception("Invalid post body")
+            new_pokemon = pokefunctions.add_one(data)
+            return jsonify(new_pokemon), 201
+        except Exception as err:
+            print(type(err))
+            return jsonify({"error": True,
+                            "Message": str(err)}), 400
 
 
 if __name__ == "__main__":

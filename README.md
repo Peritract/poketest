@@ -37,3 +37,17 @@ Pick your favourite; they all do basically the same thing.
 ## Linting
 
 Run `pylint *.py` to assess code quality.
+
+## Rationale
+
+### Why do we test?
+
+- Extensibility
+- Saves time (less manual testing)
+- Spot errors/bugs
+- Maintainability
+- Bus factor
+  - Bus factor: the number of people who would need to be hit by a bus for the organisation to fail
+- Industry standard
+- Asked about it in interviews
+- Forces you to write better code
